@@ -2,7 +2,7 @@ import Navbar from "./Navbar"
 
 const Header = ()=>{
     return (
-        <div className="">
+        <div className="w-full h-screen">
             <Navbar/>
             Headers 
         </div>
