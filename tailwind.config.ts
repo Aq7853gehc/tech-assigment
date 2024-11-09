@@ -75,6 +75,10 @@ const config: Config = {
         "body2-mobile": "14px",
         "cta-mobile": ["16px", { fontWeight: "600" }], // CTA with semibold weight
       },
+      backgroundImage: {
+        'header': "url('/images/travel/Frame.png')",
+        'footer': "url('/images/fotter.png')",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

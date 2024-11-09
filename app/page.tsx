@@ -8,7 +8,7 @@ import Scroller from "@/components/Scroller"
 
 const Home = ()=>{
   return (
-    <main className=" container mx-auto flex flex-col  bg-[#181818] w-full  px-[1rem] py-[.5rem]  md:py-[2.25rem] text-white ">
+    <main className=" container mx-auto h-full flex flex-col gap-10 bg-[#181818] w-full  px-[1rem] py-[.5rem]  md:py-[2.25rem] text-white ">
       <Navbar/>
       <Header/> 
       <Actions/>
