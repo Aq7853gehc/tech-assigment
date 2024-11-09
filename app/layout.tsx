@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.className}  antialiased`}
+        className={`${urbanist.className}  bg-[#181818] antialiased`}
       >
         {children}
       </body>
