@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      <div className="md:flex  flex-1 hidden items-center justify-around ">
+      <div className="lg:flex  flex-1 hidden items-center justify-around ">
         {/*nav links */}
         <h2 className="text-[2rem]">Fav Creator</h2>
         <h2 className="text-[2rem]">Merchandise</h2>
