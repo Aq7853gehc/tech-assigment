@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
         <h2 className="text-[2rem]">Brand</h2>
         <h2 className="text-[2rem]">Digital</h2>
       </div>
-      <div className="flex justify-around bg-white rounded-2xl h-full border-2 w-32 items-center px-2">
+      <div className="flex max-sm:hidden justify-around bg-white rounded-2xl h-full border-2 w-32 items-center px-2">
         <FiUser className="text-black h-6 w-6 " />
         <div>
           {/* drop down */}
