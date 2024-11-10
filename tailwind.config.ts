@@ -77,7 +77,7 @@ const config: Config = {
       },
       backgroundImage: {
         'header': "url('/images/travel/Frame.png')",
-        'footer': "url('/images/fotter.png')",
+        'footer': "url('/images/travel/fotter.png')",
       }
     },
   },
