@@ -13,12 +13,12 @@ const Influencer = () => {
       <h1 className="text-[#00dc82] text-4xl font-bold text-center">
         Our Influencers
       </h1>
-      <div className="size-64 rounded-full grid grid-cols-4 gap-10 w-full">
+      <div className="size-64  grid grid-cols-4 gap-10 w-full  h-fit max-sm:overflow-x-scroll max-sm:overflow-y-hidden scrollbar-hide">
         {pics.map((itms, idx) => (
-          <div key={idx} className="relative grayscale hover:grayscale-0 group">
+          <div key={idx} className="relative md:grayscale md:hover:grayscale-0 md:group">
             <div className="absolute top-3 left-2 w-full h-full rounded-full bg-gradient-to-r from-pink-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300  " />
 
-            <div className="flex gap-4 relative max-sm:">
+            <div className="flex gap-4 relative max-sm:w-24 max-sm:h-24">
               <Image
                 src={itms.src}
                 alt="pics"

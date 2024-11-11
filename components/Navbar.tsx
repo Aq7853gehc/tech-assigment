@@ -8,7 +8,7 @@ import ProfileDropdown from "./Profiledropdown";
 const Navbar: React.FC = () => {
   const [DrpOpen, setDrpOpen] = useState<boolean>(false);
   return (
-    <div className=" mt-10 flex bg-transparent py-1 text-white h-[3.9rem] justify-between  w-full items-center ">
+    <div className="mt-1 md:mt-10 flex bg-transparent py-1 text-white h-[3.9rem] justify-between  w-full items-center ">
       
       <div className="flex gap-8  h-full justify-between items-center ">
         {/*Logo*/}
@@ -20,16 +20,15 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex bg-white gap-2 h-full  w-44 md:w-[19.1rem] items-center rounded-full px-3">
+        <div className="flex bg-white gap-2 h-fit md:h-full  w-44 md:w-[19.1rem] items-center rounded-full px-3">
           <FiSearch className="w-6 h-6 text-black " />
           <input
-            className="text-black text-lg py-2 w-full font-semibold focus-visible:outline-none"
+            className="text-black text-lg py-1 md:py-2 w-full font-semibold focus-visible:outline-none"
             placeholder="Search Creator/Product"
           />
         </div>
       </div>
         <div className="sm:hidden ">
-          <BiMenu className="w-10 h-10"/>
           <ProfileDropdown/>
         </div>
       <div className="lg:flex  flex-1 hidden items-center justify-around ">

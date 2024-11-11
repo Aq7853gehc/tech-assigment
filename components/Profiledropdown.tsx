@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FiUser, FiMapPin, FiPhone, FiInfo, FiLogOut, FiEdit2 } from 'react-icons/fi';
 import { MdClose } from 'react-icons/md';
 import Image from 'next/image';
+import { BiMenu } from 'react-icons/bi';
 
 export default function ProfileDropdown() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function ProfileDropdown() {
     <div className="relative">
       {/* Trigger Button */}
       <button onClick={toggleDropdown} className="flex items-center space-x-2">
-        <span className="text-white">user</span>
+        <BiMenu className='w-10 h-10'/>
       </button>
 
       {/* Dropdown Content */}
