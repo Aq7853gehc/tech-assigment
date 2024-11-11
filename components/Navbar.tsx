@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { BiMenu } from "react-icons/bi";
 import { FiChevronDown, FiSearch, FiUser } from "react-icons/fi";
 import ProfileDropdown from "./Profiledropdown";
 
