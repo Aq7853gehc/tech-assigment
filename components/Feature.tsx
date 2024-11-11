@@ -16,7 +16,7 @@ const Feature = ()=> {
             </div>
             <div className="grid grid-cols-2 gap-2 md:gap-4 flex-1">
         {cards.map((itm,idx)=>(
-            <Card title={itm.title} info={itm.info} img={itm.img} idx={idx} key={idx}/>
+            <Card title={itm.title} info={itm.info} img={itm.img}  key={idx}/>
         ))}
             </div>
         </main>
@@ -24,7 +24,7 @@ const Feature = ()=> {
 }
 
 
-const Card =({title,img,info,idx}:{title:string,img:string,info:string,idx:number})=>{
+const Card =({title,img,info,}:{title:string,img:string,info:string,})=>{
 
     return(
         <div className={`bg-black max-w-sm max-sm:gap-4  flex  rounded-2xl flex-col items-center   py-2 px-2`}>

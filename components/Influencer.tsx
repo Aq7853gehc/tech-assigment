@@ -18,13 +18,13 @@ const Influencer = () => {
           <div key={idx} className="relative grayscale hover:grayscale-0 group">
             <div className="absolute top-3 left-2 w-full h-full rounded-full bg-gradient-to-r from-pink-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300  " />
 
-            <div className="flex gap-4 relative">
+            <div className="flex gap-4 relative max-sm:">
               <Image
                 src={itms.src}
                 alt="pics"
                 width={256}
                 height={256}
-                className="rounded-full w-full h-full object-contain"
+                className="rounded-full w-full h-full  object-contain"
               />
               <div className="px-2 flex gap-2 items-center justify-center absolute top-[60%] left-[40%] bg-white rounded-xl opacity-0 group-hover:opacity-100">
                 <h1 className="text-2xl text-black font-bold">{itms.title}</h1>

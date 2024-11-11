@@ -109,10 +109,12 @@ const Actions = () => {
           <div className="absolute top-0 left-[-10rem] w-[50%] h-full rounded-full bg-gradient-to-br from-[#FF5FD2] to-[#000000] opacity-[0.2] blur-3xl" />
           <div className="absolute top-0 right-[-10rem] w-[50%] h-full rounded-full bg-gradient-to-br from-[#4885FFD6] to-[#000000] opacity-[0.2] blur-3xl" />
 
-          <img
+          <Image
             src="/images/travel/fotter.png"
             alt="footer image"
-            className="w-full object-cover"
+            className="w-full h-full object-cover"
+            height={44}
+            width={184}
           />
 
           <svg className="absolute md:left-[10rem] -top-10 inset-0 w-full h-full">
@@ -164,10 +166,12 @@ const Actions = () => {
             <div className="absolute -top-20 left-0 w-[50%] h-[100%] rounded-3xl bg-gradient-to-br from-[#FF5FD2] to-[#000000] opacity-[0.5] blur-3xl" />
             <div className="absolute top-20 -right-10  w-[50%] h-[100%] rounded-3xl bg-gradient-to-br from-[#4885FFD6] to-[#000000] opacity-[0.6] blur-3xl" />
           </div>
-          <img
+          <Image
             src="/images/travel/fotter.png"
             alt="footer image"
             className="w-full object-cover"
+            width={1200}
+            height={500}
           />
 
           <svg className="absolute top-0  left-5  inset-0 w-full h-full">

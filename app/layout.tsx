@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Urbanist} from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const urbanist = Urbanist({subsets:["latin"], weight:["100",'400',"700"]})
 export const metadata: Metadata = {
@@ -16,8 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.className}  bg-[#181818] antialiased`}
+        className={`${urbanist.className} container mx-auto bg-[#181818] antialiased`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>

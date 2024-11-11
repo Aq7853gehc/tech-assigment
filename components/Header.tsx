@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Navbar from "./Navbar";
 
 const Header = () => {
   return (
@@ -15,8 +14,8 @@ const Header = () => {
         </div>
         <div className="text-2xl md:text-4xl max-w-lg font-bold leading-[29px] md:leading-10 w-full ">
           {/* Body  */}
-          "Unleash Your Influence: Sell Itineraries, Build Your Brand, Create
-          Merch, and Share Content – All in One Hub."
+          &quot;Unleash Your Influence: Sell Itineraries, Build Your Brand, Create
+          Merch, and Share Content – All in One Hub.&quot;
         </div>
         <div className="flex  justify-between max-w-[17rem] md:max-w-xs w-full  ">
           <button className="p-2 md:p-4 bg-[#00dc82] text-base md:text-lg rounded-xl text-black font-semibold">

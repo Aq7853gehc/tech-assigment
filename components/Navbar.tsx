@@ -1,14 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
-import { CiSearch } from "react-icons/ci";
+import { BiMenu } from "react-icons/bi";
 import { FiChevronDown, FiSearch, FiUser } from "react-icons/fi";
+import ProfileDropdown from "./Profiledropdown";
 
 const Navbar: React.FC = () => {
-  const [DrpOpen, setDrpOpen] = useState<Boolean>(false);
+  const [DrpOpen, setDrpOpen] = useState<boolean>(false);
   return (
-    <div className="  flex bg-transparent py-1 text-white h-[3.9rem] justify-between  w-full items-center ">
+    <div className=" mt-10 flex bg-transparent py-1 text-white h-[3.9rem] justify-between  w-full items-center ">
+      
       <div className="flex gap-8  h-full justify-between items-center ">
         {/*Logo*/}
         <div className="flex h-full items-center ">
@@ -19,15 +20,18 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex bg-white gap-2 h-full w-[19.1rem] items-center rounded-full px-3">
+        <div className="flex bg-white gap-2 h-full  w-44 md:w-[19.1rem] items-center rounded-full px-3">
           <FiSearch className="w-6 h-6 text-black " />
           <input
-            className="text-black text-lg py-2 font-semibold focus-visible:outline-none"
+            className="text-black text-lg py-2 w-full font-semibold focus-visible:outline-none"
             placeholder="Search Creator/Product"
           />
         </div>
       </div>
-
+        <div className="sm:hidden ">
+          <BiMenu className="w-10 h-10"/>
+          <ProfileDropdown/>
+        </div>
       <div className="lg:flex  flex-1 hidden items-center justify-around ">
         {/*nav links */}
         <h2 className="text-[2rem]">Fav Creator</h2>
@@ -46,7 +50,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {DrpOpen?(<div
-        className={`bg-black  border-white border-2 rounded-xl w-[10rem] h-[11rem] text-white absolute right-24 top-28 transition-all delay-200 justify-center w`}
+        className={`bg-black max-sm:hidden border-white border-2 rounded-xl w-[10rem] h-[11rem] text-white absolute right-24 top-28 transition-all delay-200 justify-center w`}
 
       >
         <div className="w-full flex flex-col gap-8 justify-center px-5 py-3">
